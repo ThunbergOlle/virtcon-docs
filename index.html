@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtcon Tutorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta
+      name="description"
+      content="Official Tutorial Documentation for Virtcon "
+    />
+    <style>
+      body * {
+        font-family: "Nunito", sans-serif;
+      }
+      a{
+          text-decoration: none;
+      }
+    </style>
+  </head>
+  <body style="margin-right: 15%; margin-left: 15%">
+    <div style="font-weight: bold; text-align: center">
+      <h1>Official Documentation for Virtcon</h1>
+      <p><em>Welcome to the official documenation for Virtcon</em></p>
+    </div>
+    <div style="margin-bottom: 80px">
+        <h2>Concepts</h2>
+        <h3>Production</h3>
+        <p>
+          The foundation of an economy is production. Production can be accomplished by placing buildings which has the capabilities to produce items. Items are produced every ten minutes in a so called, <em>production cycle</em> or <em>production month</em>.
+        </p>
+        <h3>Plots</h3>
+        <p>
+          In order to produce items, players need to own plots where buildings are placeable. The cost of plots will exponentially individually increase upon buying a plot.
+        </p>
+        <h3>Money</h3>
+        <p>All economies need taps and drains to keep the inflation steady. Virtcons main tap is money generating structures. These are buildings which do not produce any products, but instead awards the player with a sum every production month. A "money generating building" may consume items. The amount of money prouced by the building is set based on the amount of same buildings currently active in the game. The algorithm for this: (b * 0.97^(x))+100, b = base money production of the building, x = amount of buildings of the same type currently active</p>
+        <p>Money gets drained when players purchase plots from the server or by taxes when trading / transferring money.</p>
+        <h3>Winners</h3>
+        <p>Yes, you can win Virtcon! Every week, a new winner is decided and rewarded. The winner is decided by the player which currently holds the #1 position on the leaderboard. The winner is forced to pay 50% of their balance to the server. This is a way of preventing extremely rich players and monopolies. </p>
+      </div>
+    <div style="margin-bottom: 80px">
+      <h2>Menu & Window System</h2>
+      <video width="850px" autoplay controls loop>
+        <source src="./menu.mov" />
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        In virtcon, you have two top bars. The first topbar is displaying your
+        name, our logo and an invite link to the official discord server.
+      </p>
+      <p>
+        The gray bar has three buttons which can expand into a window-selecting
+        menu. You can open a window by clicking the on it.
+      </p>
+      <p>
+        Windows are draggable and will be placed in a natural stack-based
+        system. You can close a window by hitting the red X-button. Standard
+        stuff!
+      </p>
+    </div>
+    <div>
+      <h2>Plot System</h2>
+      <b>Let's try to explain a more complex feature: The plot system</b><br/>
+        <em>Access your plots: Me --> My Plots</em>
+      <h3>What is a plot</h3>
+      <p>
+        A plot is a grid based space where players are able to place buildings.
+        <br />
+        <b>What is a building?</b>
+        <p>A building grants players resources every 10 minutes (10 minutes = 1 production "cycle") and is placable on a plot. Buildings can <em>consume</em> and <em>produce</em> items. When consuming items, the building uses resources from your inventory in order to produce the desired item. Many items be combined in order to create one product. Buildings are craftable through the <a href="#">Building Crafter</a> and is the foundation of production in Virtcon</p>
+      </p>
+      <video width="850px" autoplay controls loop>
+        <source src="./plot.mov" />
+        Your browser does not support the video tag.
+      </video>
+      <p>Plots is an 8x8 grid where buildings are placable in all squares. There can be a maximum of one building per square and a total of x amount of buildings on a plot. X varies and is set upon creation of the plot. Therefor, some plots may be "better" than others. </p>
+      <p>There are resources placed on the plot. These resources are randomly generated which means that players may need to aquire items in other ways... (Through the public market) You can utilize your resources by placing buildings consuming the raw material on the plot. </p>
+      <p>Although you have x amount of "building" space on the plot, you can have a maximum of <b>2 types of buildings</b> per plot.</p>
+      <p><b>Always utilize your plots! If plots are left empty, they are worthless</b></p>
+    </div>
+  </body>
+</html>
