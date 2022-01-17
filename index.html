@@ -44,7 +44,11 @@
         <p>All economies need taps and drains to keep the inflation steady. Virtcons main tap is money generating structures. These are buildings which do not produce any products, but instead awards the player with a sum every production month. A "money generating building" may consume items. The amount of money prouced by the building is set based on the amount of same buildings currently active in the game. The algorithm for this: (b * 0.97^(x))+100, b = base money production of the building, x = amount of buildings of the same type currently active</p>
         <p>Money gets drained when players purchase plots from the server or by taxes when trading / transferring money.</p>
         <h3>Winners</h3>
-        <p>Yes, you can win Virtcon! Every week, a new winner is decided and rewarded. The winner is decided by the player which currently holds the #1 position on the leaderboard. The winner is forced to pay 50% of their balance to the server. This is a way of preventing extremely rich players and monopolies. </p>
+        <p>Yes, you can win Virtcon! Every week, a new winner is decided and rewarded. The winner is decided by the player which currently holds the #1 position on the leaderboard. The winner is forced to pay 50% of their balance to the server. This is a way of preventing monopolies. </p>
+        <h3>Electricity</h3>
+        <p>Your machinery and factories needs electricity to produce items and be maintaned. Therefor, a world-wide electricity price is set. The price is set by the number of active players divided by the number of "power-generating structures". You can build power generating strucutres which automatically sells electricity for a set price. Buildings that require electricity will automatically use the players balance to purchase it. </p>
+        <h3>Market</h3>
+        <p>At the very core of virtcon is the market. This market is open and free for any player to participate and players are also encouraged to use it. Here players can buy and sell resources with eachother with total transparency. </p>
       </div>
     <div style="margin-bottom: 80px">
       <h2>Menu & Window System</h2>
@@ -53,7 +57,7 @@
         Your browser does not support the video tag.
       </video>
       <p>
-        In virtcon, you have two top bars. The first topbar is displaying your
+        In virtcon, there are two top bars. The first topbar is displaying your
         name, our logo and an invite link to the official discord server.
       </p>
       <p>
@@ -85,6 +89,20 @@
       <p>There are resources placed on the plot. These resources are randomly generated which means that players may need to aquire items in other ways... (Through the public market) You can utilize your resources by placing buildings consuming the raw material on the plot. </p>
       <p>Although you have x amount of "building" space on the plot, you can have a maximum of <b>2 types of buildings</b> per plot.</p>
       <p><b>Always utilize your plots! If plots are left empty, they are worthless</b></p>
+    </div>
+    <div>
+      <h2>Scoreboard</h2>
+      <b>The scoreboard is a window for keeping track of other players wealth and progression.</b><br/>
+        <em>Access the scoreboard: Economy --> Scoreboard</em>
+      <video width="850px" autoplay controls loop>
+        <source src="./scoreboard.mov" />
+        Your browser does not support the video tag.
+      </video>
+      <p>Players are listed and ordered by wealth from top to bottom. You can search for a specific profile by typing the name of players and clicking "Find". Upon selecting a player name, you will be taken to the profile viewer page for further inspection of the player.</p>
+      <h3>Profile viewer</h3>
+      <p>Furthermore, the profile viewer will display information such as transaction history, last seen, awards and more!</p>
+      <p>One feature of this window is the transaction section. Here players are able to make money transactions to eachothers. But be careful: All transactions are public and will be displayed on the profile. </p>
+      <p>The profile viewers also allows users to inspect the inventory, production overview and plots of the player. A goal for this project has been to create an economy with total transparency, and the profile viewers is the main way of achieving this. </p>
     </div>
   </body>
 </html>
