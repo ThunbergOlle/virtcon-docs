@@ -40,18 +40,18 @@
         <p>
           In order to produce items, players need to own plots where buildings are placeable. The cost of plots will exponentially individually increase upon buying a plot.
         </p>
-        <h3>Money</h3>
+        <h3 id="money">Money</h3>
         <p>All economies need taps and drains to keep the inflation steady. Virtcons main tap is money generating structures. These are buildings which do not produce any products, but instead awards the player with a sum every production month. A "money generating building" may consume items. The amount of money prouced by the building is set based on the amount of same buildings currently active in the game. The algorithm for this: (b * 0.97^(x))+100, b = base money production of the building, x = amount of buildings of the same type currently active</p>
         <p>Money gets drained when players purchase plots from the server or by taxes when trading / transferring money.</p>
         <h3>Winners</h3>
         <p>Yes, you can win Virtcon! Every week, a new winner is decided and rewarded. The winner is decided by the player which currently holds the #1 position on the leaderboard. The winner is forced to pay 50% of their balance to the server. This is a way of preventing monopolies. </p>
-        <h3>Electricity</h3>
+        <h3 id="electricity">Electricity</h3>
         <p>Your machinery and factories needs electricity to produce items and be maintaned. Therefor, a world-wide electricity price is set. The price is set by the number of active players divided by the number of "power-generating structures". You can build power generating strucutres which automatically sells electricity for a set price. Buildings that require electricity will automatically use the players balance to purchase it. </p>
-        <h3>Market</h3>
+        <h3 id="market">Market</h3>
         <p>At the very core of virtcon is the market. This market is open and free for any player to participate and players are also encouraged to use it. Here players can buy and sell resources with eachother with total transparency. </p>
       </div>
     <div style="margin-bottom: 80px">
-      <h2>Menu & Window System</h2>
+      <h2 id="menu-window-system">Menu & Window System</h2>
       <video width="850px" autoplay controls loop>
         <source src="./menu.mov" />
         Your browser does not support the video tag.
@@ -70,8 +70,30 @@
         stuff!
       </p>
     </div>
+    <div style="margin-bottom: 80px">
+      <h2 id="menu-window-system">Item Browser</h2>
+      <em>Access the item browser: Production --> Item Browser</em><br>
+      <video width="850px" autoplay controls loop>
+        <source src="./itembrowser.mov" />
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        In the item browser, players can find information of all the items of the game. At the top of the window, there is a search box for finding the desired item.
+      </p>
+      <p>
+       The item browser has six columns for displaying various information about the item. 
+      </p>
+      <ul>
+        <li>Icon: Displays the icon </li>
+        <li>Name: Displays name </li>
+        <li>Type: What type the item is. Items with the "raw-material" can be extracted from the plot if it contains the resource. The other types may be required in crafting recipes or supply chains  </li>
+        <li>Spawn Rate: The chances of the item spawning natural upon a plots creation. The percentage is based off a "perfect" plot where all height maps are present. If an item doesn't have a spawn rate, then it is only obtainable from production.   </li>
+        <li>Actions: The action column allows player to view the market data on the item as well as see the recipe of the item. <b>The "View Recipe" button is important since this is the way to find recipes for products.</b></li>
+      </ul>
+      
+    </div>
     <div>
-      <h2>Plot System</h2>
+      <h2 id="plot-system">Plot System</h2>
       <b>Let's try to explain a more complex feature: The plot system</b><br/>
         <em>Access your plots: Me --> My Plots</em>
       <h3>What is a plot</h3>
@@ -79,7 +101,7 @@
         A plot is a grid based space where players are able to place buildings.
         <br />
         <b>What is a building?</b>
-        <p>A building grants players resources every 10 minutes (10 minutes = 1 production "cycle") and is placable on a plot. Buildings can <em>consume</em> and <em>produce</em> items. When consuming items, the building uses resources from your inventory in order to produce the desired item. Many items be combined in order to create one product. Buildings are craftable through the <a href="#">Building Crafter</a> and is the foundation of production in Virtcon</p>
+        <p>A building grants players resources every 10 minutes (10 minutes = 1 production "cycle") and is placable on a plot. Buildings can <em>consume</em> and <em>produce</em> items. When consuming items, the building uses resources from your inventory in order to produce the desired item. Many items be combined in order to create one product. Buildings are craftable through the <a href="#building-crafter">Building Crafter</a> and is the foundation of production in Virtcon</p>
       </p>
       <video width="850px" autoplay controls loop>
         <source src="./plot.mov" />
@@ -91,9 +113,10 @@
       <p><b>Always utilize your plots! If plots are left empty, they are worthless</b></p>
     </div>
     <div>
-      <h2>Scoreboard</h2>
+      <h2 id="scoreboard">Scoreboard</h2>
       <b>The scoreboard is a window for keeping track of other players wealth and progression.</b><br/>
         <em>Access the scoreboard: Economy --> Scoreboard</em>
+        <br>
       <video width="850px" autoplay controls loop>
         <source src="./scoreboard.mov" />
         Your browser does not support the video tag.
@@ -104,5 +127,36 @@
       <p>One feature of this window is the transaction section. Here players are able to make money transactions to eachothers. But be careful: All transactions are public and will be displayed on the profile. </p>
       <p>The profile viewers also allows users to inspect the inventory, production overview and plots of the player. A goal for this project has been to create an economy with total transparency, and the profile viewers is the main way of achieving this. </p>
     </div>
+    <div>
+      <h2 id="building-crafter">Building Crafter</h2>
+      <b>The building crafter is a window for creating new buildings and structures.</b><br/>
+        <em>Access the Building Crafter: Production --> Building Crafter</em>
+        <br>
+      <video width="850px" autoplay controls loop>
+        <source src="./buildingcrafter.mov" />
+        Your browser does not support the video tag.
+      </video>
+      <p>The building crafter is one of the most complex, yet the most important window to utilize correctly. It allows players to find buildings required to create their favorite product.  </p>
+      <p>Firstly, you find the item your want to craft by either searching for it or selected in from the list below the input. </p>
+      <p>Secondly, select the building you want to create the previously set item with. There is typically only one building in this list except for the "Money" or "Electricity" items. </p>
+      <p>At the third section, there is an overview of the building, displaying how much electricity it consumes and how many currently active buildings there are. Remember: More buildings of one type equals more competition on the market.   </p>
+      <p>At the bottom, users are able to see what the buildings consume and produce on a production cycle.  The resources needed for creating the building is also displayed as well as the button for creating it. </p>
+
+    </div>
+    <div>
+      <h2 id="production-overview">Production Overview</h2>
+      <b>In the production overview, players are able to see what they are producing and consuming each production month.</b><br/>
+        <em>Access the Production Overview: Production --> Production Overview</em>
+        <br>
+      <video width="850px" autoplay controls loop>
+        <source src="./productionoverview.mov" />
+        Your browser does not support the video tag.
+      </video>
+      <p>The production overview gives you a total overview of the production and consumtion of your account each production cycle. The "Net" column shows you the output and result of the row. </p>
+      <p>Players are also able to see how much the <a href="#money">money-generating</a> structures gives each month, as well as the electricity produces and consumed.</p>
+      <p>The net electricity bill gives you an overview of the amount electricity sold and produced by you. If the color of this text is green, then you are given the set amount each month. However, if it's red, this means you are forced to pay the amount every production month. </p>
+      
+    </div>
+
   </body>
 </html>
